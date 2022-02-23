@@ -1,14 +1,11 @@
 <?php
-use App\Learn\Foo;
-use App\Wcs\Hello;
+use CowSay\Cow;
 require __DIR__ . '/../vendor/autoload.php';
 
-$foo = new Foo('Hello');
-$wcs = new Hello();
+$bessie = new Cow('Hello, Farm!');
+$bessie->setTongue('U')->setEyes('-o')->setPoop('🌻');
+$output = $bessie->say();
+echo $output;
 ?>
 
-<?= $foo->classInfos() ?>
 
-</br>
-
-<?= $wcs->talk() ?>
