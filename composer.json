@@ -1,0 +1,16 @@
+{
+  "name": "matthias/quest_php_advanced",
+  "description": "Php WCS learning - advanced",
+  "authors": [
+    {
+      "name": "MatthiasWanner",
+      "email": "matthias.wanner@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  }
+}
