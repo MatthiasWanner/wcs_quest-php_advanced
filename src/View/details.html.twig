@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+	{{ parent() }}
+	- Details
+{% endblock %}
+
+{% block content %}
+
+	<h1>
+		Details avec mail Global
+		{{ name }}!
+	</h1>
+
+	<p>{{contactEmail}}</p>
+
+{% endblock %}
