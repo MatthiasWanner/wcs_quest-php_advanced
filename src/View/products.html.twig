@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twig</title>
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
@@ -14,10 +12,13 @@
     <p>👇 Here is a non-exhaustive list of music instruments, passed with twig render variables 🚀:</p>
     <ul>
         {% for product in products %}
-            <li>
-                {{ product }}
-            </li>
+            {% if loop.index is divisible by(3) %}
+                <span>{{ product }}</span></br>
+            {% else %}
+                <span>{{ product }}</span>
+            {% endif %}
         {% endfor %}
     </ul>
+    {{dump(products)}}
 </body>
 </html>
